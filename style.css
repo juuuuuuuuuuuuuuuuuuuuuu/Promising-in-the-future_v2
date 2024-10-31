@@ -9,6 +9,7 @@
   font-style: normal;
   font-variation-settings:"wdth" 100;
 }
+/* http://localhost:5500/ */
 .button{
     position: sticky;
     bottom: 0;
@@ -33,7 +34,7 @@
     align-items: center;
 
 }
-a:hover {
+.imogi a:hover {
     color: rgb(131, 113, 87);
 }
 .me{
@@ -119,6 +120,12 @@ a:hover {
   font-style: normal;
   font-variation-settings: "wdth" 100;
     font-weight: 600;
+
+    text-shadow: 
+        -1px -1px 0 #A08D7C,  
+        -1px -1px 0 #A08D7C,
+        -1px  1px 0 #A08D7C,
+        1px  1px 0 #A08D7C;
 }
 /*여기까지 head*/
 #about{
@@ -158,6 +165,9 @@ a:hover {
 }
 .contant p{
     font-size: 25px;
+}
+.imogi{
+    transition: background-color 0.5s ease;
 }
 .imogi .fa-brands{
     font-size: 40px;
@@ -210,6 +220,8 @@ a:hover {
     height: 500px;
 
     text-align: center;
+
+    transition: transform 0.3s ease;
 }
 .sbox .rogi{
     font-size: 30px;
@@ -221,6 +233,17 @@ a:hover {
     margin-left: 15px;
     margin-right: 15px;
 }
+.sbox:hover{
+    transform: scale(1.1);
+}
+#skills .box{
+    width: 1200px;
+    height: 600px;
+    background-color: #F4F3EA;
+    border-radius: 20px;
+
+    margin-top: 30px;
+}
 
 /*여기서부터 프로젝트*/
 #projects{
@@ -229,15 +252,81 @@ a:hover {
 
     background-color: #F4F3EA;
     color: #A08D7C;
+    /**/
+    position: relative;
 }
 .pro{
     padding-top: 80px;
+    /**/
+    text-align: center;
 }
 .pro p{
     font-size: 100px;
 
     text-align: center;
 }
+.boxm{
+    display: flex;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center;   /* 세로 가운데 정렬 */
+    margin-top: 0px;
+}
+.box{
+    align-items: center;
+    justify-content: space-between;
+}
+#slide {
+    width: 100%; /* 기본적으로 100% */
+    height: auto; /* 비율 유지 */
+}
+.slider{
+    width: 1100px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center;   /* 세로 가운데 정렬 */
+    margin-top: 0px;
+}
+.slider img {
+    width: 1100px;  /* 원하는 너비 */
+    height: 500px;  /* 원하는 높이 */
+    border-radius: 20px;
+
+    box-shadow: 0px 4px 20px #A08D7C;
+
+    margin-top: 30px;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    color: #A08D7C;
+}
+.controls span{
+    width: 35px;
+}
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #F4F3EA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    color: #A08D7C;
+    font-style: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #D4C4B4;
+    /*color: #F4F3EA;*/
+}
+/*여기서부터 저장소*/
 #archiving{
     width: 100%;
     height: 950px;
@@ -294,72 +383,8 @@ a:hover {
     text-decoration: none;
     color: #A08D7C;
 }
-.boxm{
-    display: flex;
-    justify-content: center; /* 가로 가운데 정렬 */
-    align-items: center;   /* 세로 가운데 정렬 */
-    margin-top: 0px;
-}
-.box{
-    align-items: center;
-    justify-content: space-between;
-}
-.slider{
-    width: 1100px;
-    height: 500px;
-    justify-content: center;
-    align-items: center;
 
-    display: flex;
-    justify-content: center; /* 가로 가운데 정렬 */
-    align-items: center;   /* 세로 가운데 정렬 */
-    margin-top: 0px;
-}
-.slider img {
-    width: 1100px;  /* 원하는 너비 */
-    height: 500px;  /* 원하는 높이 */
-    border-radius: 20px;
 
-    box-shadow: 0px 4px 20px #A08D7C;
-
-    margin-top: 30px;
-}
-
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-    color: #A08D7C;
-}
-.controls span{
-    width: 35px;
-}
-button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    background-color: #F4F3EA;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-
-    color: #A08D7C;
-    font-style: bold;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #D4C4B4;
-    /*color: #F4F3EA;*/
-}
-#skills .box{
-    width: 1200px;
-    height: 600px;
-    background-color: #F4F3EA;
-    border-radius: 20px;
-
-    margin-top: 30px;
-}
 
 
 /*여기서부터 엔딩*/
@@ -407,25 +432,94 @@ button:hover {
     background-color: rgb(131, 113, 87);
 }
 
-/*------------------------------------------------------------*/
 
-@media (max-width: 768px) {
+
+/*------------------------------------------------------------*/
+/*패드화면*/
+
+@media (max-width: 992px) and (min-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .backgroud{
+        text-shadow: 
+                -1px -1px 0 #A08D7C,  
+                 1px -1px 0 #A08D7C,
+                -1px  1px 0 #A08D7C,
+                 1px  1px 0 #A08D7C;
+    }
+    /*head 끝*/
+
+    .proimg img{
+        /*max-width: 100%;
+        height: auto;*/
+        margin-left: 10px;
+
+        width: 300px;
+        height: 300px;
+    }
+    .about-right .contant h1{
+        font-size: 40px;
+    }
+    .about-right .contant .imogi{
+        font-size: 20px;
+    }
+    /*---------어떡해 해야할지 모르겠음. 초! 비!! 상!!!!!!!마진응 업ㄱ애도 안된다 마진만 해결되면 빠르게 끝날듯-------------------*/
+    .skills .sboxm{
+        /*margin-left: 10;
+        margin-right: 10;*/
+    }
+    .sboxm .sbox{
+        background-color: aqua;/*?*/
+    }
+    /*자바 문제인듯 ㅇㅇ 사이즈가 검사하면 바뀌어있는데 그냥 보면 안 바뀌어 있다. 추후 수정이 많이 ㅠㅣㄹ요함*/
+    /*.slider{
+        width: 700px;
+    }
+    .slider img{
+        width: 700px;
+    }이 코드는 내가 짠거ㅓ*/
+    #slide {
+        width: 100%; /* 전체 너비 사용 */
+        height: auto; /* 비율 유지 */
+    }
+    .slider {
+        width: 100%; /* 화면 너비에 맞춤 */
+        height: auto; /* 비율 유지 */
+    }
+
+    .slider img {
+        width: 100%; /* 전체 너비 사용 */
+        height: auto; /* 비율 유지 */
+    }
+    /*---------------왜 이러니 이러지마 젭알 아 진짜루 ㅠㅠㅠㅠㅠㅠ--------------------*/
+    .arcbox{
+        width: 100px;
+    }
+    /*-----------해야할것 스킬,프로젝트,저장소(+about도 하면 좋을듯)------------*/
+
+}
+
+
+
+/*------------------------------------------------------------*/
+/*스마트폰화면*/
+
+@media (max-width: 576px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .menu{
+        width: 200px;
+    }
+    #head{
+        margin: 0;
+        padding: 0;
+    }
     nav ul {
         flex-direction: column; /* 작은 화면에서는 세로로 배치 */
         align-items: center;
-    }
-    
-    nav ul li {
-        margin: 10px 0; /* 세로 배치 시 여백 조정 */
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 24px; /* 작은 화면에서 글자 크기 조정 */
-    }
-    
-    header p {
-        font-size: 16px; /* 작은 화면에서 글자 크기 조정 */
     }
 }
