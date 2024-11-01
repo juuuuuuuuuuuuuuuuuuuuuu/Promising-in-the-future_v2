@@ -189,8 +189,9 @@
 
     background-color: #A08D7C;
 
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
     color: #F4F3EA;
 }
@@ -207,16 +208,19 @@
     justify-content: space-between;
     align-items: center;
 
-    margin-left: 400px;
+
+    margin-left: 25%;
     margin-right: 400px;
     margin-top: 50px;
+    margin: 0 auto;
+    padding: 100px;
 }
 .sbox{
     color: #A08D7C;
     background-color: #F4F3EA;
     border-radius: 20px;
 
-    width: 300px;
+    width: 33%;
     height: 500px;
 
     text-align: center;
@@ -467,19 +471,25 @@ button:hover {
     }
     /*---------어떡해 해야할지 모르겠음. 초! 비!! 상!!!!!!!마진응 업ㄱ애도 안된다 마진만 해결되면 빠르게 끝날듯-------------------*/
     .skills .sboxm{
-        /*margin-left: 10;
-        margin-right: 10;*/
+        /* margin-left: 10px;
+        margin-right: 10px; */
+        display: flex;
+      
+      
+        margin: 0 auto;
     }
     .sboxm .sbox{
         background-color: aqua;/*?*/
+         /* margin-left: 10px;
+        margin-right: 10px; */
     }
     /*자바 문제인듯 ㅇㅇ 사이즈가 검사하면 바뀌어있는데 그냥 보면 안 바뀌어 있다. 추후 수정이 많이 ㅠㅣㄹ요함*/
-    /*.slider{
-        width: 700px;
+    .slider{
+        width: 700px !important;
     }
     .slider img{
         width: 700px;
-    }이 코드는 내가 짠거ㅓ*/
+    }
     #slide {
         width: 100%; /* 전체 너비 사용 */
         height: auto; /* 비율 유지 */
