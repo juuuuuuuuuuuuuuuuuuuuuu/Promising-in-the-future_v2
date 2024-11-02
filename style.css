@@ -10,11 +10,11 @@
   font-variation-settings:"wdth" 100;
 }
 /* http://localhost:5500/ */
-.button{
+/* .button{
     position: sticky;
     bottom: 0;
-    z-index: 99999999999;
-}
+    
+} */
 .home{
     width: 50px ;
     height: 50px;
@@ -32,6 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 99999999999;
 
 }
 .imogi a:hover {
@@ -185,43 +186,45 @@
 /*여기서부터 스킬*/
 #skills{
     width: 100%;
-    height: 950px;
+    /* height: 950px; */
 
     background-color: #A08D7C;
 
     /* display: flex;
     justify-content: center;
     align-items: center; */
+    padding: 80px 0 120px;
 
     color: #F4F3EA;
 }
-.ski{
-    padding-top: 80px;
-}
+/*.ski{
+    /* padding-top: 80px; }*/
 .ski p{
     font-size: 100px;
 
     text-align: center;
 }
-.sboxm{
-    display: flex;
+/*.sboxm{
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
 
 
-    margin-left: 25%;
-    margin-right: 400px;
+    margin-left: 60%;
+    margin-right: 30%;
     margin-top: 50px;
     margin: 0 auto;
-    padding: 100px;
-}
+    padding: 100px; }*/
+
 .sbox{
     color: #A08D7C;
     background-color: #F4F3EA;
     border-radius: 20px;
 
-    width: 33%;
-    height: 500px;
+    /* width: 30%; */
+    height: 100%;
+    min-height: 500px;
+    padding: 20px;
 
     text-align: center;
 
@@ -281,7 +284,7 @@
 }
 #slide {
     width: 100%; /* 기본적으로 100% */
-    height: auto; /* 비율 유지 */
+    height: 500px; /* 비율 유지 */
 }
 .slider{
     width: 1100px;
@@ -290,18 +293,25 @@
     align-items: center;
 
     display: flex;
-    justify-content: center; /* 가로 가운데 정렬 */
-    align-items: center;   /* 세로 가운데 정렬 */
     margin-top: 0px;
+
+    overflow: hidden;
+
+    box-shadow: 0px 4px 20px #A08D7C;
+
+
+    border-radius: 20px;
 }
 .slider img {
     width: 1100px;  /* 원하는 너비 */
     height: 500px;  /* 원하는 높이 */
     border-radius: 20px;
+    object-fit: cover;
 
-    box-shadow: 0px 4px 20px #A08D7C;
+    /* margin-top: 30px; */
 
-    margin-top: 30px;
+    width: 100%;
+    height: auto;
 }
 .controls {
     display: flex;
@@ -469,7 +479,6 @@ button:hover {
     .about-right .contant .imogi{
         font-size: 20px;
     }
-    /*---------어떡해 해야할지 모르겠음. 초! 비!! 상!!!!!!!마진응 업ㄱ애도 안된다 마진만 해결되면 빠르게 끝날듯-------------------*/
     .skills .sboxm{
         /* margin-left: 10px;
         margin-right: 10px; */
@@ -478,38 +487,48 @@ button:hover {
       
         margin: 0 auto;
     }
-    .sboxm .sbox{
-        background-color: aqua;/*?*/
+    /*.sboxm .sbox{
+        /*?*/
          /* margin-left: 10px;
-        margin-right: 10px; */
-    }
-    /*자바 문제인듯 ㅇㅇ 사이즈가 검사하면 바뀌어있는데 그냥 보면 안 바뀌어 있다. 추후 수정이 많이 ㅠㅣㄹ요함*/
+        margin-right: 10px; }*/
+        /*width: 100%; /* 전체 너비 사용 */
+        /*height: 400px; /* 비율 유지 */
+        /*width: 700px;
+        height: 400px; }*/
     .slider{
-        width: 700px !important;
+        width: 700px;
+        height: 400px;
     }
     .slider img{
-        width: 700px;
+        width: 100%; /* 비율에 맞춰 자동 조정 */
+        /*max-width: 100%; /* 최대 너비 100% */
+        height: 400px; /* 높이는 비율 유지 */
     }
-    #slide {
-        width: 100%; /* 전체 너비 사용 */
-        height: auto; /* 비율 유지 */
-    }
+
     .slider {
         width: 100%; /* 화면 너비에 맞춤 */
         height: auto; /* 비율 유지 */
+        width: 700px ;
+        height: 400px;
+
+        overflow: hidden;
+    
+        border-radius: 20px;
     }
 
-    .slider img {
-        width: 100%; /* 전체 너비 사용 */
-        height: auto; /* 비율 유지 */
-    }
-    /*---------------왜 이러니 이러지마 젭알 아 진짜루 ㅠㅠㅠㅠㅠㅠ--------------------*/
     .arcbox{
-        width: 100px;
+        width: 700px;
     }
-    /*-----------해야할것 스킬,프로젝트,저장소(+about도 하면 좋을듯)------------*/
-
+    .arcbox p{
+        font-size: 20px;
+    }
+    .arcbox .fa-brands{
+        font-size: 200px;
+        margin-left: 10px;
+        padding-right: 10px;
+    }
 }
+    /*-----------해야할것 스킬,프로젝트,저장소(+about도 하면 좋을듯)------------*/
 
 
 
