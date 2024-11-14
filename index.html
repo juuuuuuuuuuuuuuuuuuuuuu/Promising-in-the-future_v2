@@ -19,7 +19,7 @@
 
 </head>
 <body>
-    <a href="#head"><button class="home"><i class="fa-solid fa-arrow-up"></i></button></a>
+    <a class="home" href="#head"><i class="fa-solid fa-arrow-up"></i></a>
     <div id="wrapper" class="container-fluid p-0">
         <div id="head" class="container">
             <div class="header">
@@ -54,10 +54,10 @@
                         I am a 17-year-old student attending Suwon Information Science High School.
                     </p>
                     <div class="imogi">
-                        <a href="https://www.youtube.com/?app=desktop&hl=ko&gl=KR" class="ro" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://www.facebook.com/?locale=ko_KR" class="ro" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/" class="ro" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://discord.com/" class="ro" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.youtube.com/?app=desktop&hl=ko&gl=KR" id="youtube" class="ro" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/?locale=ko_KR" id="facebook" class="ro" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" class="ro" id="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://discord.com/" id="discord" class="ro" target="_blank"><i class="fa-brands fa-discord"></i></a>
                     </div>
                 </div>
                 
@@ -102,9 +102,9 @@
                                 <a id="slideLink" href=""><img id="slide" src="image1.jpg" alt="Image Slider"></a>
                             </div>
                             <div class="controls">
-                                <button id="prevBtn"><i class="fa-solid fa-arrow-left"></i></button>
+                                <button class="left" id="prevBtn"><i class="fa-solid fa-arrow-left"></i></button>
                                 <span id="imageIndex">1 / 3</span>
-                                <button id="nextBtn"><i class="fa-solid fa-arrow-right"></i></button>
+                                <button class="right" id="nextBtn"><i class="fa-solid fa-arrow-right"></i></button>
                             </div>
                     </div>
                 </div>
@@ -128,8 +128,8 @@
         <div id="ending">
             <p>Thank you for watching</p>
             <div class="endb">
-                <a href="resume.hwpx" download="resume" role="button"><button>Download resume</button></a>
-            </div>  
+                <a href="resume.hwpx" download="resume" role="button">Download resume</a>
+            </div>
         </div>
     </div>
 
