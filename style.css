@@ -100,12 +100,22 @@
 }
 .menu li{
     list-style-type: none;
-
     height: 30px;
     line-height: 30px;
-    min-width: 110px;
     text-align: center;
 }
+
+.menu li:nth-child(1),
+.menu li:nth-child(2){
+    min-width: 78px;
+}
+.menu li:nth-child(3){
+    min-width: 100px;
+}
+.menu li:nth-child(4){
+    min-width: 110px;
+}
+
 .backgroud P{
     color: white;
     font-size: 80PX;
@@ -495,14 +505,7 @@ button:hover {
       
         margin: 0 auto;
     }
-    /*.sboxm .sbox{
-        /*?*/
-         /* margin-left: 10px;
-        margin-right: 10px; }*/
-        /*width: 100%; /* 전체 너비 사용 */
-        /*height: 400px; /* 비율 유지 */
-        /*width: 700px;
-        height: 400px; }*/
+    
     .slider{
         width: 700px;
         height: 400px;
@@ -543,18 +546,120 @@ button:hover {
 /*------------------------------------------------------------*/
 /*스마트폰화면*/
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
     *{
         margin: 0;
         padding: 0;
     }
-    .menu{
-        width: 200px;
-    }
     #head{
         margin: 0;
         padding: 0;
+        max-width: 767px;
+        min-width: fit-content;
     }
+    .logo p{
+        padding-left: 15px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    /*about-----------*/
+    #about .am{
+        font-size: 80px;
+    }
+    .about-right{
+        display: none;
+        align-items: center;  
+        justify-content: center;
+
+        flex-direction: column;  /* 세로 정렬로 변경 */
+        justify-content: center; /* 세로 가운데 정렬 */
+        align-items: center;     /* 가로 가운데 정렬 (선택 사항) */
+    }
+    #about .contant{
+        padding-left: 20px;
+    }
+    #about .about-right{
+        padding-top: 30px;
+    }
+    .proimg img{
+        margin-left: 10px;
+
+        width: 400px;
+        height: 400px;
+    }
+    .about-right .contant h1{
+        padding-top: 20px;
+        font-size: 40px;
+    }
+    .about-right .contant .imogi{
+        font-size: 20px;
+    }
+    /*about 끝----------*/
+    /*skills--------------*/
+    .ski p{
+        font-size: 80px;
+    }
+    /*skills end-------------------*/
+    /*projects-----------------*/
+    .pro p{
+        font-size: 80px;
+
+        padding-bottom: 50px;
+    }
+    .slider{
+        width: 450px;
+        height: 400px;
+    }
+    .slider img{
+        width: 100%; /* 비율에 맞춰 자동 조정 */
+        /*max-width: 100%; /* 최대 너비 100% */
+        height: 400px; /* 높이는 비율 유지 */
+    }
+
+    .slider {
+        width: 100%; /* 화면 너비에 맞춤 */
+        height: auto; /* 비율 유지 */
+        width: 450px ;
+        height: 400px;
+
+        overflow: hidden;
+    
+        border-radius: 20px;
+    }
+    /*projects end------------*/
+    /*archiving-----------------*/
+    .arc p{
+        font-size: 80px;
+    }
+    .arcbox{
+        width: 450px;
+        height: 600px;
+
+        flex-direction: column;  /* 세로 정렬로 변경 */
+        justify-content: center; /* 세로 가운데 정렬 */
+        align-items: center;     /* 가로 가운데 정렬 (선택 사항) */
+    }
+    .arcbox p{
+        font-size: 20px;
+    }
+    .arcbox .fa-brands{
+        font-size: 200px;
+        margin-left: 10px;
+        padding-right: 10px;
+    }
+    .git{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .arcbox .git{
+        font-size: 25px;
+    }
+    /**/
+    /***/
+    #ending p{
+        padding-top: 200px;
+    }
+    /***/
     nav ul {
         flex-direction: column; /* 작은 화면에서는 세로로 배치 */
         align-items: center;
